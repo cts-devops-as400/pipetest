@@ -13,7 +13,7 @@ pipeline {
     }
     stage('deploy') {
       steps {
-        bat 'copy C:\\Program Files (x86)\\Jenkins\\workspace\\fstpipeline_master\\target\\*.war  C:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\webapps'
+        bat 'mvn tomcat9:deploy'
       }
     }
   }
