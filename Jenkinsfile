@@ -6,6 +6,7 @@ pipeline {
         bat 'mvn test'
       }
     }
+    //new commit id will created
     stage('build') {
       steps {
         bat 'mvn package'
