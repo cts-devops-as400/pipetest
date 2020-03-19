@@ -6,7 +6,7 @@ pipeline {
         bat 'mvn test'
       }
     }
-    
+    //this is for confilt
     stage('build') {
       steps {
         bat 'mvn package'
