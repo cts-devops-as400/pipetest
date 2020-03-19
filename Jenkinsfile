@@ -6,7 +6,7 @@ pipeline {
         bat 'mvn test'
       }
     }
-    
+    //this is new branch
     stage('build') {
       steps {
         bat 'mvn package'
